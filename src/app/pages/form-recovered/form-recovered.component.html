@@ -1,0 +1,37 @@
+<div class="container-fluid form">
+    <div class="row">
+        <div class="col-12">
+            <h4>Formulario</h4>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-12">
+            <form action="" (ngSubmit)="guardar()" [formGroup]="recoveredform">
+                <div class="row">
+                    <div class="col-12">
+                        <input type="number" class="form-control" placeholder="Escribe el Id" formControlName="id">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <input type="text" class="form-control" placeholder="Escribe el Nombre" formControlName="name">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <input type="String" class="form-control" placeholder="Escribe la edad" formControlName="age">
+                    </div>
+                </div>
+            </form>
+            <div class="row buttons">
+                <div class="d-grid gap-2 col-6">
+                    <button type="submit" class="btn btn-block bg-dark  text-light" *ngIf="recoveredform.valid"
+            (click)="guardar()">Guardar</button>
+                </div>
+                <div class="d-grid gap-2 col-6">
+                    <button class="btn btn-block btn-outline-primary " (click)="onvolver()">Volver</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

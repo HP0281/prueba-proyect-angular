@@ -1,0 +1,27 @@
+<div class="container tabla">
+    <div class="row justify-content-center">
+        <div class="col-7">
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                        <th scope="col">ID</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Age</th>
+                        <th class="d-none d-sm-block" scope="col">Accion</th>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let recovered of dbrecovered.recovereds">
+                            <td>{{ recovered.id }}</td>
+                            <td>{{ recovered.name }}</td>
+                            <td>{{ recovered.age }}</td>
+                            <td class="btn-group d-none d-sm-block" role="group">
+                                <button type="button" class="btn btn-warning m-1" (click)="onEditar(recovered)">Editar</button>
+                                <button type="button" class="btn btn-danger m-1" (click)="eliminar(recovered._id)">Eliminar</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,11 @@
+.form{
+    margin-top: 3rem;
+    min-width: 400px;
+    width: 20%;
+    border:1px inset #999;
+    border-radius: 4px;
+    padding: 30px;
+}
+.buttons{
+    margin-top: 20px;
+}

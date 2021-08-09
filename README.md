@@ -1,3 +1,12 @@
+#proyecto angular esta consumiendo el servicio de la api
+desde la direccion
+localhost:8080/recovered
+
+para desplegar el front se puede valer desde el repositorio
+en github de github pages en el siguiente link+
+https://hp0281.github.io/prueba-frontend/
+o desplegar este repositorio en un servidor.
+
 # PruebaTecnica
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.4.

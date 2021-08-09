@@ -1,0 +1,9 @@
+.crear{
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.button{
+    display: flex;
+    justify-content: center;
+}
